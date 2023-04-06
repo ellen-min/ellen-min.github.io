@@ -18,38 +18,38 @@
 
   function addHighlight() {
     let companyName = this.querySelector("h2");
-    companyName.classList.add("highlighted");
+    companyName.classList.toggle("highlighted");
 
     let descriptions = this.querySelectorAll("p");
     for (let i = 0; i < descriptions.length; i++) {
       let currDesc = descriptions[i];
       if (currDesc.querySelectorAll("a").length == 0) {
-        currDesc.classList.add("highlightedDescrip");
+        currDesc.classList.toggle("highlightedDescrip");
       } else {
-        currDesc.classList.add("workex");
+        currDesc.classList.toggle("workex");
       }
     }
 
-    this.querySelector("h3").classList.add("highlightedLoc");
-    this.querySelector("h4").classList.add("highlightedLoc"); // terrible style fix later
+    this.querySelector("h3").classList.toggle("highlightedLoc");
+    this.querySelector("h4").classList.toggle("highlightedLoc"); // terrible style fix later
   }
 
-  function removeHighlight() {
+  function toggleHighlight() {
     let companyName = this.querySelector("h2");
-    companyName.classList.remove("highlighted");
+    companyName.classList.toggle("highlighted");
 
     let descriptions = this.querySelectorAll("p");
     for (let i = 0; i < descriptions.length; i++) {
       let currDesc = descriptions[i];
       if (currDesc.querySelectorAll("a").length == 0) {
-        currDesc.classList.remove("highlightedDescrip");
+        currDesc.classList.toggle("highlightedDescrip");
       } else {
-        currDesc.classList.remove("workex");
+        currDesc.classList.toggle("workex");
       }
     }
 
-    this.querySelector("h3").classList.remove("highlightedLoc");
-    this.querySelector("h4").classList.remove("highlightedLoc"); // terrible style fix later
+    this.querySelector("h3").classList.toggle("highlightedLoc");
+    this.querySelector("h4").classList.toggle("highlightedLoc"); // terrible style fix later
   }
 
   init();

@@ -82,7 +82,7 @@ h3, h4, .toolsused, a:link, a:visited, a:hover, a:active {
   font-size: 10pt;
 }
 
-h3, h4, nav, a:link, a:visited, a:hover, a:active {
+h3, h4 {
   font-style: italic;
 }
 
@@ -102,6 +102,7 @@ ul {
 
 /* -------------------- Special elements -------------------- */
 nav {
+  font-style: italic;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -110,6 +111,7 @@ nav {
 
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
+  font-style: italic;
   color: #0ac2bc;
   outline: dashed #0ac2bc 1.5px;
   padding: 6px;

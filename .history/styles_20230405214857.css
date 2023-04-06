@@ -17,15 +17,13 @@ ul {
   list-style-type: none
 }
 
-nav, header, footer {
+header {
+  padding: 25px;
   text-align: center;
 }
 
-header {
-  padding: 25px;
-}
-
 footer {
+  text-align: center;
   padding-top: 20px;
 }
 
@@ -43,28 +41,23 @@ p {
   color: gray;
 }
 
-h3, h4, .toolsused, footer > ul > li {
+footer > ul > li {
   color: #b3b3b3;
 }
 
-h1, h2, h3, h4 {
+h2, h3, h4 {
   font-weight: normal;
+  padding: 0px 50px;
 }
 
 h1, h2 {
   font-style: normal;
-}
-
-h2, h3, h4 {
-  padding: 0px 50px;
-}
-
-h1, .highlighted {
-  color: #15f4ee
+  font-weight: normal;
 }
 
 h1 {
   font-size: 16pt;
+  color: #15f4ee;
 }
 
 h1, h3, h4, p {
@@ -78,11 +71,12 @@ h2 {
   color: lightgray;
 }
 
-h3, h4, .toolsused, a:link, a:visited, a:hover, a:active {
+h3, h4, .toolsused {
   font-size: 10pt;
+  color: #b3b3b3;
 }
 
-h3, h4, nav, a:link, a:visited, a:hover, a:active {
+h3, h4 {
   font-style: italic;
 }
 
@@ -102,6 +96,8 @@ ul {
 
 /* -------------------- Special elements -------------------- */
 nav {
+  font-style: italic;
+  text-align: center;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -110,6 +106,8 @@ nav {
 
 a:link, a:visited, a:hover, a:active {
   text-decoration: none;
+  font-style: italic;
+  font-size: 10pt;
   color: #0ac2bc;
   outline: dashed #0ac2bc 1.5px;
   padding: 6px;
@@ -118,6 +116,10 @@ a:link, a:visited, a:hover, a:active {
 
 .hidden {
   display: none;
+}
+
+.highlighted {
+  color: #15f4ee;
 }
 
 .workex a:link, .workex a:visited {
