@@ -1,8 +1,8 @@
 /**
- * @author Ellen Min
- * Last updated: 04-05-2023
- * This is the javascript page for index.html for my personal website.
- */
+* @author Ellen Min
+* Last updated: 04-05-2023
+* This is the javascript page for index.html for my personal website.
+*/
 
 (function () {
   "use strict";
@@ -18,4 +18,5 @@
   }
 
   init();
+
 })();

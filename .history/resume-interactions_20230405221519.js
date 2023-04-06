@@ -1,8 +1,8 @@
 /**
- * @author Ellen Min
- * Last updated: 04-05-2023
- * This is the javascript page for resume.html for my personal website.
- */
+* @author Ellen Min
+* Last updated: 04-05-2023
+* This is the javascript page for resume.html for my personal website.
+*/
 
 (function () {
   "use strict";
@@ -31,7 +31,8 @@
 
     this.querySelector("h3").classList.toggle("highlightedLoc");
     this.querySelector("h4").classList.toggle("highlightedLoc"); // terrible style fix later
-  }
+    }
 
   init();
+
 })();
