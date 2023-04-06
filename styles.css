@@ -1,0 +1,128 @@
+/*
+* Author: Ellen Min
+*
+* This page is the styles.css page used in all pages of my personal website. 
+* It defines fonts, sizes, colors, and general styling for the website.
+*/
+
+/* -------------------- Main layout -------------------- */
+body {
+  background-color: black;
+  font-family: 'Space Mono', monospace;
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style-type: none
+}
+
+header {
+  padding: 25px;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding-top: 20px;
+}
+
+footer > ul > li {
+  display: inline-block;
+  padding: 20px;
+}
+
+/* -------------------- Text Formatting -------------------- */
+nav, ul, h1, h3, h4, .highlightedLoc, .highlightedDescrip{
+  color: white;
+}
+
+p {
+  color: gray;
+}
+
+footer > ul > li {
+  color: #b3b3b3;
+}
+
+h2, h3, h4 {
+  font-weight: normal;
+  padding: 0px 50px;
+}
+
+h1, h2 {
+  font-style: normal;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 16pt;
+  color: #15f4ee;
+}
+
+h1, h3, h4, p {
+  margin: 0px;
+}
+
+h2 {
+  font-size: 14pt;
+  margin-top: 15px;
+  margin-bottom: 0px;
+  color: lightgray;
+}
+
+h3, h4, .toolsused {
+  font-size: 10pt;
+  color: #b3b3b3;
+}
+
+h3, h4 {
+  font-style: italic;
+}
+
+h4 {
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 12pt;
+  padding: 0px 80px;
+}
+
+ul { 
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* -------------------- Special elements -------------------- */
+nav {
+  font-style: italic;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  font-style: italic;
+  font-size: 10pt;
+  color: #0ac2bc;
+  outline: dashed #0ac2bc 1.5px;
+  padding: 6px;
+  line-height: 40px;
+}
+
+.hidden {
+  display: none;
+}
+
+.highlighted {
+  color: #15f4ee;
+}
+
+.workex a:link, .workex a:visited {
+  color: #067975;
+  outline: dashed #067975 1.5px;
+}
