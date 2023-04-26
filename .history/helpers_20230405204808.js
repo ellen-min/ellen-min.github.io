@@ -1,5 +1,7 @@
 /**
- * helper functions taken from cs 132 @ caltech (el hovik)
+ * CS 132
+ * Provided global DOM accessor aliases.
+ * These are the ONLY functions that should be global in your submissions.
  */
  
 /**

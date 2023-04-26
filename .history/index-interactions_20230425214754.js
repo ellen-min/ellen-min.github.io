@@ -1,7 +1,7 @@
 /**
  * @author Ellen Min
  * Last updated: 04-05-2023
- * adds interaction to index.html
+ * Adds interaction to index.html for my personal website.
  */
 
 (function () {

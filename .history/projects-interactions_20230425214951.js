@@ -1,7 +1,7 @@
 /**
  * @author Ellen Min
  * Last updated: 04-05-2023
- * interactive javascript page for projects.html
+ * This is the javascript page for projects.html for my personal website.
  */
 
 (function () {

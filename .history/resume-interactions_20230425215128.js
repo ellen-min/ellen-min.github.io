@@ -1,23 +1,25 @@
 /**
  * @author Ellen Min
  * Last updated: 04-05-2023
- * interactive javascript page for projects.html
+ * This is the javascript page for resume.html for my personal website.
  */
 
 (function () {
   "use strict";
 
   function init() {
-    let allProjects = qsa("div.project");
-    for (let i = 0; i < allProjects.length; i++) {
+    let allExperiences = qsa("div.experience");
+    for (let i = 0; i < allExperiences.length; i++) {
       // not using toggle due to bug ... fix later
-      allProjects[i].addEventListener("mouseover", addHighlight);
-      allProjects[i].addEventListener("mouseout", removeHighlight);
+      allExperiences[i].addEventListener("mouseover", addHighlight);
+      allExperiences[i].addEventListener("mouseout", removeHighlight);
     }
   }
 
   function addHighlight() {
-    this.querySelector("h2").classList.add("highlighted");
+    let companyName = this.querySelector("h2");
+    companyName.classList.add("highlighted");
+
     let descriptions = this.querySelectorAll("p");
     for (let i = 0; i < descriptions.length; i++) {
       let currDesc = descriptions[i];
@@ -27,10 +29,14 @@
         currDesc.classList.remove("workex");
       }
     }
+
+    this.querySelector("h3").classList.add("highlightedLoc");
+    this.querySelector("h4").classList.add("highlightedLoc"); // fix style later
   }
 
   function removeHighlight() {
-    this.querySelector("h2").classList.remove("highlighted");
+    let companyName = this.querySelector("h2");
+    companyName.classList.remove("highlighted");
 
     let descriptions = this.querySelectorAll("p");
     for (let i = 0; i < descriptions.length; i++) {
@@ -41,6 +47,9 @@
         currDesc.classList.add("workex");
       }
     }
+
+    this.querySelector("h3").classList.remove("highlightedLoc");
+    this.querySelector("h4").classList.remove("highlightedLoc"); // fix style later
   }
 
   init();

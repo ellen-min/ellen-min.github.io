@@ -1,5 +1,5 @@
 /**
- * helper functions taken from cs 132 @ caltech (el hovik)
+ * helper functions taken from cs 132 @ caltech
  */
  
 /**
