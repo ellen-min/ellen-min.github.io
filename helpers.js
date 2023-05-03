@@ -1,6 +1,6 @@
 /**
  * helper functions taken from cs 132 @ caltech (el hovik)
- */
+ */ 
  
 /**
  * Returns the element that has the ID attribute with the specified value.
