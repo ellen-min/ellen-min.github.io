@@ -31,7 +31,6 @@
     }
 
     this.querySelector("h3").classList.add("highlightedLoc");
-    this.querySelector("h4").classList.add("highlightedLoc"); // fix style later
   }
 
   function removeHighlight() {
@@ -49,7 +48,7 @@
     }
 
     this.querySelector("h3").classList.remove("highlightedLoc");
-    this.querySelector("h4").classList.remove("highlightedLoc"); // fix style later
+    this.querySelector("h4").classList.remove("highlightedLoc");
   }
 
   init();
